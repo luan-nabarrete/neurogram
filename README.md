@@ -35,7 +35,7 @@ Esse comando baixa os módulos, provedores e configura o diretório .terraform/.
 2. Visualizar o plano de execução
 
 ```bash
-terraform plan -var-file="terraform.tfvars"
+terraform plan
 ```
 
 Esse comando mostra todas as alterações que o Terraform fará no ambiente com base nas configurações e variáveis fornecidas.
@@ -43,7 +43,7 @@ Esse comando mostra todas as alterações que o Terraform fará no ambiente com 
 3. Aplicar o plano e provisionar os recursos
 
 ```bash
-terraform apply -var-file="terraform.tfvars"
+terraform apply
 ```
 
 
@@ -116,7 +116,7 @@ Com essas informações, acessamos a instância com o comando:
 Se quiser destruir todos os recursos:
 
 ```bash
-terraform destroy -var-file="terraform.tfvars"
+terraform destroy
 ```
 
 
