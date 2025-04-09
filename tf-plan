@@ -1,0 +1,372 @@
+[0m[1mmodule.ec2_role.module.ec2_role.data.aws_caller_identity.current: Reading...[0m[0m
+[0m[1mmodule.ec2_role.module.ec2_role.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.vpc.module.vpc.aws_vpc.this[0]: Refreshing state... [id=vpc-0c5018531a5437b67][0m
+[0m[1mmodule.ec2_role.module.ec2_role.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.ec2_role.module.ec2_role.data.aws_caller_identity.current: Read complete after 0s [id=948881762705][0m
+[0m[1mmodule.ec2_role.module.ec2_role.data.aws_iam_policy_document.assume_role_with_mfa[0]: Reading...[0m[0m
+[0m[1mmodule.ec2_role.module.ec2_role.data.aws_iam_policy_document.assume_role_with_mfa[0]: Read complete after 0s [id=3064267428][0m
+[0m[1mmodule.ec2_role.module.ec2_role.aws_iam_role.this[0]: Refreshing state... [id=ec2-ssm-role][0m
+[0m[1mmodule.ec2_role.module.ec2_role.aws_iam_role_policy_attachment.custom[0]: Refreshing state... [id=ec2-ssm-role-20250409061410674200000001][0m
+[0m[1mmodule.vpc.module.vpc.aws_default_route_table.default[0]: Refreshing state... [id=rtb-0a4512b620fa9020a][0m
+[0m[1mmodule.vpc.module.vpc.aws_default_security_group.this[0]: Refreshing state... [id=sg-0250f795d338de637][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table.private[0]: Refreshing state... [id=rtb-0752c85b7451dfe05][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table.public[0]: Refreshing state... [id=rtb-03016b56fb77f5f1c][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.private[2]: Refreshing state... [id=subnet-0010ad88bd00008ce][0m
+[0m[1mmodule.vpc.module.vpc.aws_default_network_acl.this[0]: Refreshing state... [id=acl-080f8525bf7da5199][0m
+[0m[1mmodule.vpc.module.vpc.aws_internet_gateway.this[0]: Refreshing state... [id=igw-0ff16ef11de0417c5][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.private[0]: Refreshing state... [id=subnet-0556170a0fc7249c9][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.private[1]: Refreshing state... [id=subnet-0995930faceec9613][0m
+[0m[1mmodule.vpc.module.vpc.aws_vpn_gateway.this[0]: Refreshing state... [id=vgw-03a5f6a494cae5b97][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.public[0]: Refreshing state... [id=subnet-00557037ef38993e9][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.public[1]: Refreshing state... [id=subnet-09d6b0c9e480b745e][0m
+[0m[1mmodule.vpc.module.vpc.aws_subnet.public[2]: Refreshing state... [id=subnet-05021d37922abd166][0m
+[0m[1mmodule.vpc.module.vpc.aws_eip.nat[0]: Refreshing state... [id=eipalloc-02d09776bc2fca453][0m
+[0m[1mmodule.vpc.module.vpc.aws_route.public_internet_gateway[0]: Refreshing state... [id=r-rtb-03016b56fb77f5f1c1080289494][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.private[2]: Refreshing state... [id=rtbassoc-0aea8575a838f2580][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.private[1]: Refreshing state... [id=rtbassoc-066b838b18c5b2ef7][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.private[0]: Refreshing state... [id=rtbassoc-08c055fbe0ad26802][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.public[2]: Refreshing state... [id=rtbassoc-0287dd24e8641eb2a][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.public[1]: Refreshing state... [id=rtbassoc-0d0ee69fc95a9ccc6][0m
+[0m[1mmodule.vpc.module.vpc.aws_route_table_association.public[0]: Refreshing state... [id=rtbassoc-0b81e28d4ceaf5d2a][0m
+[0m[1mmodule.vpc.module.vpc.aws_nat_gateway.this[0]: Refreshing state... [id=nat-00998dbe50a211003][0m
+[0m[1mmodule.vpc.module.vpc.aws_route.private_nat_gateway[0]: Refreshing state... [id=r-rtb-0752c85b7451dfe051080289494][0m
+[0m[1mmodule.http_sg.module.db_sg.aws_security_group.this_name_prefix[0]: Refreshing state... [id=sg-09f0afab1dc3c41cb][0m
+[0m[1mmodule.http_sg.module.http_sg.aws_security_group.this_name_prefix[0]: Refreshing state... [id=sg-086cb41a2d2773b7d][0m
+[0m[1mmodule.http_sg.module.db_sg.aws_security_group_rule.egress_rules[0]: Refreshing state... [id=sgrule-87612912][0m
+[0m[1mmodule.http_sg.module.http_sg.aws_security_group_rule.egress_rules[0]: Refreshing state... [id=sgrule-2408012978][0m
+[0m[1mmodule.http_sg.module.db_sg.aws_security_group_rule.ingress_with_source_security_group_id[0]: Refreshing state... [id=sgrule-1216612833][0m
+[0m[1mmodule.http_sg.module.http_sg.aws_security_group_rule.ingress_with_cidr_blocks[0]: Refreshing state... [id=sgrule-3744833861][0m
+[0m[1mmodule.db_sg.module.db_sg.aws_security_group.this_name_prefix[0]: Refreshing state... [id=sg-007804201592f1673][0m
+[0m[1mmodule.db_sg.module.http_sg.aws_security_group.this_name_prefix[0]: Refreshing state... [id=sg-09ba06413b5505fee][0m
+[0m[1mmodule.db_sg.module.http_sg.aws_security_group_rule.ingress_with_cidr_blocks[0]: Refreshing state... [id=sgrule-2312819044][0m
+[0m[1mmodule.db_sg.module.db_sg.aws_security_group_rule.ingress_with_source_security_group_id[0]: Refreshing state... [id=sgrule-1483372510][0m
+[0m[1mmodule.db_sg.module.http_sg.aws_security_group_rule.egress_rules[0]: Refreshing state... [id=sgrule-2322792118][0m
+[0m[1mmodule.db_sg.module.db_sg.aws_security_group_rule.egress_rules[0]: Refreshing state... [id=sgrule-1734144650][0m
+[0m[1mmodule.rds.module.db.module.db_instance.data.aws_partition.current: Reading...[0m[0m
+[0m[1mmodule.rds.module.db.module.db_instance.data.aws_partition.current: Read complete after 0s [id=aws][0m
+[0m[1mmodule.rds.module.db.module.db_instance.data.aws_iam_policy_document.enhanced_monitoring: Reading...[0m[0m
+[0m[1mmodule.rds.module.db.module.db_instance.data.aws_iam_policy_document.enhanced_monitoring: Read complete after 0s [id=76086537][0m
+[0m[1mmodule.rds.module.db.module.db_instance.random_id.snapshot_identifier[0]: Refreshing state... [id=PtM5bA][0m
+[0m[1mmodule.rds.module.db.module.db_subnet_group.aws_db_subnet_group.this[0]: Refreshing state... [id=teste-db-20250409061625107500000009][0m
+[0m[1mmodule.rds.module.db.module.db_parameter_group.aws_db_parameter_group.this[0]: Refreshing state... [id=teste-db-2025040906162511010000000a][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create[0m
+ [36m<=[0m read (data resources)[0m
+
+Terraform will perform the following actions:
+
+[1m  # module.ec2_role.aws_iam_instance_profile.ec2_profile[0m will be created
+[0m  [32m+[0m[0m resource "aws_iam_instance_profile" "ec2_profile" {
+      [32m+[0m[0m arn         = (known after apply)
+      [32m+[0m[0m create_date = (known after apply)
+      [32m+[0m[0m id          = (known after apply)
+      [32m+[0m[0m name        = "ec2-ssm-role-profile"
+      [32m+[0m[0m name_prefix = (known after apply)
+      [32m+[0m[0m path        = "/"
+      [32m+[0m[0m role        = "ec2-ssm-role"
+      [32m+[0m[0m tags_all    = (known after apply)
+      [32m+[0m[0m unique_id   = (known after apply)
+    }
+
+[1m  # module.ec2_instance.module.ec2_instance.data.aws_partition.current[0m will be read during apply
+  # (depends on a resource or a module with changes pending)
+[0m [36m<=[0m[0m data "aws_partition" "current" {
+      [32m+[0m[0m dns_suffix         = (known after apply)
+      [32m+[0m[0m id                 = (known after apply)
+      [32m+[0m[0m partition          = (known after apply)
+      [32m+[0m[0m reverse_dns_prefix = (known after apply)
+    }
+
+[1m  # module.ec2_instance.module.ec2_instance.data.aws_ssm_parameter.this[0][0m will be read during apply
+  # (depends on a resource or a module with changes pending)
+[0m [36m<=[0m[0m data "aws_ssm_parameter" "this" {
+      [32m+[0m[0m arn            = (known after apply)
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m insecure_value = (known after apply)
+      [32m+[0m[0m name           = "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2"
+      [32m+[0m[0m type           = (known after apply)
+      [32m+[0m[0m value          = (sensitive value)
+      [32m+[0m[0m version        = (known after apply)
+    }
+
+[1m  # module.ec2_instance.module.ec2_instance.aws_instance.this[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_instance" "this" {
+      [32m+[0m[0m ami                                  = (known after apply)
+      [32m+[0m[0m arn                                  = (known after apply)
+      [32m+[0m[0m associate_public_ip_address          = (known after apply)
+      [32m+[0m[0m availability_zone                    = (known after apply)
+      [32m+[0m[0m cpu_core_count                       = (known after apply)
+      [32m+[0m[0m cpu_threads_per_core                 = (known after apply)
+      [32m+[0m[0m disable_api_stop                     = (known after apply)
+      [32m+[0m[0m disable_api_termination              = (known after apply)
+      [32m+[0m[0m ebs_optimized                        = (known after apply)
+      [32m+[0m[0m enable_primary_ipv6                  = (known after apply)
+      [32m+[0m[0m get_password_data                    = false
+      [32m+[0m[0m host_id                              = (known after apply)
+      [32m+[0m[0m host_resource_group_arn              = (known after apply)
+      [32m+[0m[0m iam_instance_profile                 = "ec2-ssm-role-profile"
+      [32m+[0m[0m id                                   = (known after apply)
+      [32m+[0m[0m instance_initiated_shutdown_behavior = (known after apply)
+      [32m+[0m[0m instance_lifecycle                   = (known after apply)
+      [32m+[0m[0m instance_state                       = (known after apply)
+      [32m+[0m[0m instance_type                        = "t3.micro"
+      [32m+[0m[0m ipv6_address_count                   = (known after apply)
+      [32m+[0m[0m ipv6_addresses                       = (known after apply)
+      [32m+[0m[0m key_name                             = (known after apply)
+      [32m+[0m[0m monitoring                           = true
+      [32m+[0m[0m outpost_arn                          = (known after apply)
+      [32m+[0m[0m password_data                        = (known after apply)
+      [32m+[0m[0m placement_group                      = (known after apply)
+      [32m+[0m[0m placement_partition_number           = (known after apply)
+      [32m+[0m[0m primary_network_interface_id         = (known after apply)
+      [32m+[0m[0m private_dns                          = (known after apply)
+      [32m+[0m[0m private_ip                           = (known after apply)
+      [32m+[0m[0m public_dns                           = (known after apply)
+      [32m+[0m[0m public_ip                            = (known after apply)
+      [32m+[0m[0m secondary_private_ips                = (known after apply)
+      [32m+[0m[0m security_groups                      = (known after apply)
+      [32m+[0m[0m source_dest_check                    = true
+      [32m+[0m[0m spot_instance_request_id             = (known after apply)
+      [32m+[0m[0m subnet_id                            = "subnet-00557037ef38993e9"
+      [32m+[0m[0m tags                                 = {
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "docker-server"
+        }
+      [32m+[0m[0m tags_all                             = {
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "docker-server"
+        }
+      [32m+[0m[0m tenancy                              = (known after apply)
+      [32m+[0m[0m user_data                            = "3e27e2ddb7c7b6f3102286052b62bf97a5ee4f5c"
+      [32m+[0m[0m user_data_base64                     = (known after apply)
+      [32m+[0m[0m user_data_replace_on_change          = false
+      [32m+[0m[0m volume_tags                          = {
+          [32m+[0m[0m "Name" = "docker-instance"
+        }
+      [32m+[0m[0m vpc_security_group_ids               = [
+          [32m+[0m[0m "sg-086cb41a2d2773b7d",
+        ]
+
+      [32m+[0m[0m capacity_reservation_specification (known after apply)
+
+      [32m+[0m[0m cpu_options (known after apply)
+
+      [32m+[0m[0m credit_specification {}
+
+      [32m+[0m[0m ebs_block_device (known after apply)
+
+      [32m+[0m[0m enclave_options {
+          [32m+[0m[0m enabled = (known after apply)
+        }
+
+      [32m+[0m[0m ephemeral_block_device (known after apply)
+
+      [32m+[0m[0m instance_market_options (known after apply)
+
+      [32m+[0m[0m maintenance_options (known after apply)
+
+      [32m+[0m[0m metadata_options {
+          [32m+[0m[0m http_endpoint               = "enabled"
+          [32m+[0m[0m http_protocol_ipv6          = "disabled"
+          [32m+[0m[0m http_put_response_hop_limit = 1
+          [32m+[0m[0m http_tokens                 = "required"
+          [32m+[0m[0m instance_metadata_tags      = (known after apply)
+        }
+
+      [32m+[0m[0m network_interface (known after apply)
+
+      [32m+[0m[0m private_dns_name_options (known after apply)
+
+      [32m+[0m[0m root_block_device (known after apply)
+
+      [32m+[0m[0m timeouts {}
+    }
+
+[1m  # module.s3_logs_bucket.module.s3_logs_bucket.data.aws_caller_identity.current[0m will be read during apply
+  # (depends on a resource or a module with changes pending)
+[0m [36m<=[0m[0m data "aws_caller_identity" "current" {
+      [32m+[0m[0m account_id = (known after apply)
+      [32m+[0m[0m arn        = (known after apply)
+      [32m+[0m[0m id         = (known after apply)
+      [32m+[0m[0m user_id    = (known after apply)
+    }
+
+[1m  # module.s3_logs_bucket.module.s3_logs_bucket.data.aws_canonical_user_id.this[0][0m will be read during apply
+  # (depends on a resource or a module with changes pending)
+[0m [36m<=[0m[0m data "aws_canonical_user_id" "this" {
+      [32m+[0m[0m display_name = (known after apply)
+      [32m+[0m[0m id           = (known after apply)
+    }
+
+[1m  # module.s3_logs_bucket.module.s3_logs_bucket.data.aws_partition.current[0m will be read during apply
+  # (depends on a resource or a module with changes pending)
+[0m [36m<=[0m[0m data "aws_partition" "current" {
+      [32m+[0m[0m dns_suffix         = (known after apply)
+      [32m+[0m[0m id                 = (known after apply)
+      [32m+[0m[0m partition          = (known after apply)
+      [32m+[0m[0m reverse_dns_prefix = (known after apply)
+    }
+
+[1m  # module.s3_logs_bucket.module.s3_logs_bucket.data.aws_region.current[0m will be read during apply
+  # (depends on a resource or a module with changes pending)
+[0m [36m<=[0m[0m data "aws_region" "current" {
+      [32m+[0m[0m description = (known after apply)
+      [32m+[0m[0m endpoint    = (known after apply)
+      [32m+[0m[0m id          = (known after apply)
+      [32m+[0m[0m name        = (known after apply)
+    }
+
+[1m  # module.s3_logs_bucket.module.s3_logs_bucket.aws_s3_bucket.this[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_s3_bucket" "this" {
+      [32m+[0m[0m acceleration_status         = (known after apply)
+      [32m+[0m[0m acl                         = (known after apply)
+      [32m+[0m[0m arn                         = (known after apply)
+      [32m+[0m[0m bucket                      = "log-devops-teste-dev"
+      [32m+[0m[0m bucket_domain_name          = (known after apply)
+      [32m+[0m[0m bucket_prefix               = (known after apply)
+      [32m+[0m[0m bucket_regional_domain_name = (known after apply)
+      [32m+[0m[0m force_destroy               = false
+      [32m+[0m[0m hosted_zone_id              = (known after apply)
+      [32m+[0m[0m id                          = (known after apply)
+      [32m+[0m[0m object_lock_enabled         = false
+      [32m+[0m[0m policy                      = (known after apply)
+      [32m+[0m[0m region                      = (known after apply)
+      [32m+[0m[0m request_payer               = (known after apply)
+      [32m+[0m[0m tags                        = {
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "meu-logs-dev"
+        }
+      [32m+[0m[0m tags_all                    = {
+          [32m+[0m[0m "Environment" = "dev"
+          [32m+[0m[0m "Name"        = "meu-logs-dev"
+        }
+      [32m+[0m[0m website_domain              = (known after apply)
+      [32m+[0m[0m website_endpoint            = (known after apply)
+
+      [32m+[0m[0m cors_rule (known after apply)
+
+      [32m+[0m[0m grant (known after apply)
+
+      [32m+[0m[0m lifecycle_rule (known after apply)
+
+      [32m+[0m[0m logging (known after apply)
+
+      [32m+[0m[0m object_lock_configuration (known after apply)
+
+      [32m+[0m[0m replication_configuration (known after apply)
+
+      [32m+[0m[0m server_side_encryption_configuration (known after apply)
+
+      [32m+[0m[0m versioning (known after apply)
+
+      [32m+[0m[0m website (known after apply)
+    }
+
+[1m  # module.s3_logs_bucket.module.s3_logs_bucket.aws_s3_bucket_acl.this[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_s3_bucket_acl" "this" {
+      [32m+[0m[0m acl    = "private"
+      [32m+[0m[0m bucket = (known after apply)
+      [32m+[0m[0m id     = (known after apply)
+
+      [32m+[0m[0m access_control_policy (known after apply)
+    }
+
+[1m  # module.s3_logs_bucket.module.s3_logs_bucket.aws_s3_bucket_public_access_block.this[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_s3_bucket_public_access_block" "this" {
+      [32m+[0m[0m block_public_acls       = true
+      [32m+[0m[0m block_public_policy     = true
+      [32m+[0m[0m bucket                  = (known after apply)
+      [32m+[0m[0m id                      = (known after apply)
+      [32m+[0m[0m ignore_public_acls      = true
+      [32m+[0m[0m restrict_public_buckets = true
+    }
+
+[1m  # module.rds.module.db.module.db_instance.aws_db_instance.this[0][0m will be created
+[0m  [32m+[0m[0m resource "aws_db_instance" "this" {
+      [32m+[0m[0m address                               = (known after apply)
+      [32m+[0m[0m allocated_storage                     = 20
+      [32m+[0m[0m allow_major_version_upgrade           = false
+      [32m+[0m[0m apply_immediately                     = false
+      [32m+[0m[0m arn                                   = (known after apply)
+      [32m+[0m[0m auto_minor_version_upgrade            = true
+      [32m+[0m[0m availability_zone                     = (known after apply)
+      [32m+[0m[0m backup_retention_period               = (known after apply)
+      [32m+[0m[0m backup_target                         = (known after apply)
+      [32m+[0m[0m backup_window                         = "03:00-06:00"
+      [32m+[0m[0m ca_cert_identifier                    = (known after apply)
+      [32m+[0m[0m character_set_name                    = (known after apply)
+      [32m+[0m[0m copy_tags_to_snapshot                 = false
+      [32m+[0m[0m database_insights_mode                = (known after apply)
+      [32m+[0m[0m db_name                               = "postgres"
+      [32m+[0m[0m db_subnet_group_name                  = "teste-db-20250409061625107500000009"
+      [32m+[0m[0m dedicated_log_volume                  = false
+      [32m+[0m[0m delete_automated_backups              = true
+      [32m+[0m[0m deletion_protection                   = false
+      [32m+[0m[0m domain_fqdn                           = (known after apply)
+      [32m+[0m[0m endpoint                              = (known after apply)
+      [32m+[0m[0m engine                                = "postgres"
+      [32m+[0m[0m engine_lifecycle_support              = (known after apply)
+      [32m+[0m[0m engine_version                        = "17"
+      [32m+[0m[0m engine_version_actual                 = (known after apply)
+      [32m+[0m[0m final_snapshot_identifier             = "final-teste-db-3ed3396c"
+      [32m+[0m[0m hosted_zone_id                        = (known after apply)
+      [32m+[0m[0m iam_database_authentication_enabled   = false
+      [32m+[0m[0m id                                    = (known after apply)
+      [32m+[0m[0m identifier                            = "teste-db"
+      [32m+[0m[0m identifier_prefix                     = (known after apply)
+      [32m+[0m[0m instance_class                        = "db.t3.micro"
+      [32m+[0m[0m iops                                  = (known after apply)
+      [32m+[0m[0m kms_key_id                            = (known after apply)
+      [32m+[0m[0m latest_restorable_time                = (known after apply)
+      [32m+[0m[0m license_model                         = (known after apply)
+      [32m+[0m[0m listener_endpoint                     = (known after apply)
+      [32m+[0m[0m maintenance_window                    = "mon:00:00-mon:03:00"
+      [32m+[0m[0m manage_master_user_password           = true
+      [32m+[0m[0m master_user_secret                    = (known after apply)
+      [32m+[0m[0m master_user_secret_kms_key_id         = (known after apply)
+      [32m+[0m[0m max_allocated_storage                 = 0
+      [32m+[0m[0m monitoring_interval                   = 30
+      [32m+[0m[0m monitoring_role_arn                   = (known after apply)
+      [32m+[0m[0m multi_az                              = false
+      [32m+[0m[0m nchar_character_set_name              = (known after apply)
+      [32m+[0m[0m network_type                          = (known after apply)
+      [32m+[0m[0m option_group_name                     = (known after apply)
+      [32m+[0m[0m parameter_group_name                  = "teste-db-2025040906162511010000000a"
+      [32m+[0m[0m password_wo                           = (write-only attribute)
+      [32m+[0m[0m performance_insights_enabled          = false
+      [32m+[0m[0m performance_insights_kms_key_id       = (known after apply)
+      [32m+[0m[0m performance_insights_retention_period = (known after apply)
+      [32m+[0m[0m port                                  = 5432
+      [32m+[0m[0m publicly_accessible                   = false
+      [32m+[0m[0m replica_mode                          = (known after apply)
+      [32m+[0m[0m replicas                              = (known after apply)
+      [32m+[0m[0m resource_id                           = (known after apply)
+      [32m+[0m[0m skip_final_snapshot                   = false
+      [32m+[0m[0m snapshot_identifier                   = (known after apply)
+      [32m+[0m[0m status                                = (known after apply)
+      [32m+[0m[0m storage_encrypted                     = true
+      [32m+[0m[0m storage_throughput                    = (known after apply)
+      [32m+[0m[0m storage_type                          = (known after apply)
+      [32m+[0m[0m tags                                  = {
+          [32m+[0m[0m "Environment" = "dev"
+        }
+      [32m+[0m[0m tags_all                              = {
+          [32m+[0m[0m "Environment" = "dev"
+        }
+      [32m+[0m[0m timezone                              = (known after apply)
+      [32m+[0m[0m username                              = "user123"
+      [32m+[0m[0m vpc_security_group_ids                = [
+          [32m+[0m[0m "sg-007804201592f1673",
+        ]
+
+      [32m+[0m[0m timeouts {}
+    }
+
+[1mPlan:[0m 6 to add, 0 to change, 0 to destroy.
+[0m[90m
+─────────────────────────────────────────────────────────────────────────────[0m
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.
