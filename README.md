@@ -70,19 +70,18 @@ Teste o acesso à aplicação (Apache Web Server) hospedada via Docker na instâ
 
 Exemplo:
 
-    ```bash
     Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 
     Outputs:
 
     ec2_public_ip = "13.219.73.206"
-    ```
+
 
 O teste pode ser feito com o seguinte comando:
 
-```bash
-curl -I http://13.219.73.206/
-```
+
+    curl -I http://13.219.73.206/
+
 
 Obs: Pode ser acessado o endereço http://13.219.73.206/ pelo navegador.
 
@@ -91,25 +90,25 @@ Obs: Pode ser acessado o endereço http://13.219.73.206/ pelo navegador.
 Antes do deploy, atualize a variável "var.ssh_access_ip_address" em terraform.tfvars com o seu endereço IP público + máscara de rede (/32) ou um range de IP's. Obs: ela servirá para configurar a regra de entrada no SG da instância EC2.
 
 Exemplo: 
-ssh_access_ip_address    = "201.95.11.254/32"
+
+    ssh_access_ip_address    = "201.95.11.254/32"
 
 Após o deploy, usaremos o mesmo endereço IP público exibido e a chave .pem, que também será exibida. Ela será usada para nos autenticar na instância com o usuário padrão das imagens da AWS (ec2-user).
 
-    ```bash
+ 
     Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
 
     Outputs:
 
     ec2_public_ip = "13.219.73.206"
     private_key_path = "ec2/docker-server-key-dev.pem"
-    ```
+
     
 Com essas informações, acessamos a instância com o comando:
 
-    ```bash
+
 
     ssh -i ./ec2/docker-server-key-dev.pem ec2-user@13.219.73.206
-    ```
 
 
 
