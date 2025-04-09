@@ -50,17 +50,17 @@ terraform apply -var-file="terraform.tfvars"
 # Recursos Criados
 
 
-    VPC e sub-redes (pública/privada)
+VPC e sub-redes (pública/privada)
 
-    Security Groups
+Security Groups
 
-    Buckets S3
+Buckets S3
 
-    EC2 com role e user_data
+EC2 com role e user_data
 
-    RDS PostgreSQL
+RDS PostgreSQL
 
-    IAM roles e policies
+IAM roles e policies
 
 
 
