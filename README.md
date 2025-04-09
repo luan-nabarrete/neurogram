@@ -93,7 +93,7 @@ Antes do deploy, atualize a variável "var.ssh_access_ip_address" em terraform.t
 Exemplo: 
 ssh_access_ip_address    = "201.95.11.254/32"
 
-Após o deploy, usaremos o mesmo endereço IP público exibido e a chave .pem, que também será exibida. Ela que será usada para nos autenticar na instância.
+Após o deploy, usaremos o mesmo endereço IP público exibido e a chave .pem, que também será exibida. Ela será usada para nos autenticar na instância com o usuário padrão das imagens da AWS (ec2-user).
 
     ```bash
     Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
