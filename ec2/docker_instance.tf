@@ -29,17 +29,24 @@ module "ec2_instance" {
 
   name = "docker-instance"
 
-  instance_type          = var.instance_type
-  monitoring             = true
-  vpc_security_group_ids = [var.security_group_id]
-  subnet_id              = var.public_subnets[0]
+  instance_type               = var.instance_type
+  monitoring                  = true
+  vpc_security_group_ids      = [var.security_group_id]
+  subnet_id                   = var.public_subnets[0]
 
-  iam_instance_profile   = var.iam_instance_profile
+  associate_public_ip_address = true
+
+  iam_instance_profile        = var.iam_instance_profile
 
   user_data = file("${path.module}/user_data.sh")
 
   tags = {
-     Environment = var.environment
-     Name        = "docker-server"
+     Environment              = var.environment
+     Name                     = "docker-server"
   }
+}
+
+output "ec2_public_ip" {
+  description = "EC2 instance public IPv4"
+  value       = module.ec2_instance.public_ip
 }

@@ -64,6 +64,26 @@ IAM roles e policies
 
 
 
+# HTTP Access Apache - Docker
+
+Teste o acesso à aplicação (Apache Web Server) hospedada via Docker na instância EC2 usando o IP público exibido após o deploy:
+
+Exemplo:
+    ```bash
+    Apply complete! Resources: 1 added, 0 changed, 1 destroyed.
+
+    Outputs:
+
+    ec2_public_ip = "13.219.73.206"
+    ```
+
+O teste pode ser feito com o seguinte comando:
+    ```bash
+    curl -I http://13.219.73.206/
+    ```
+Obs: Pode ser acessado o endereço http://13.219.73.206/ pelo navegador.
+
+
 # Destroy
 Se quiser destruir todos os recursos:
 
@@ -71,4 +91,6 @@ Se quiser destruir todos os recursos:
 terraform destroy -var-file="terraform.tfvars"
 ```
 
-# HTTP Access Apache - Docker
+
+
+

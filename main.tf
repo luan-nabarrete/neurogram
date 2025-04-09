@@ -76,6 +76,11 @@ module "s3_logs_bucket" {
     depends_on      = [module.ec2_role]
 }
 
+output "ec2_public_ip" {
+  description = "EC2 instance public IPv4"
+  value       = module.ec2_instance.ec2_public_ip
+}
+
 
 
 
