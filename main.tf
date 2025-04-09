@@ -32,6 +32,15 @@ module "db_sg" {
     depends_on  = [module.http_sg]
 }
 
+# Security Group - SSH
+module "ssh_sg" {
+    source      = "./security_groups"
+    vpc_id      = module.vpc.vpc_id
+    cidr_block  = var.ssh_access_ip_address
+    http_sg     = module.http_sg.http_sg_id
+    depends_on  = [module.vpc]
+}
+
 # IAM Role
 module "ec2_role" {
     source          = "./iam"
@@ -42,7 +51,8 @@ module "ec2_instance" {
     source                  = "./ec2"
     instance_type           = var.instance_type
     environment             = var.environment
-    security_group_id       = module.http_sg.http_sg_id
+    http_security_group_id  = module.http_sg.http_sg_id
+    ssh_security_group_id   = module.ssh_sg.ssh_sg_id
     public_subnets          = module.vpc.public_subnets
     ec2_role                = module.ec2_role.instance_profile_name
     iam_instance_profile    = module.ec2_role.instance_profile_name
@@ -76,11 +86,11 @@ module "s3_logs_bucket" {
     depends_on      = [module.ec2_role]
 }
 
-output "ec2_public_ip" {
-  description = "EC2 instance public IPv4"
-  value       = module.ec2_instance.ec2_public_ip
+
+output "private_key_path" {
+  value = module.ec2_instance.private_key_path
 }
 
-
-
-
+output "ec2_public_ip" {
+  value       = module.ec2_instance.ec2_public_ip
+}
