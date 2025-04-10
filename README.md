@@ -77,7 +77,7 @@ Exemplo:
     ec2_public_ip = "13.219.73.206"
 
 
-O teste pode ser feito com o seguinte comando:
+O teste pode ser feito via cUrl no Linux:
 
 
     curl -I http://13.219.73.206/
