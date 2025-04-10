@@ -1,13 +1,13 @@
 # Pré-requisitos
 
 
-Terraform instalado (versão recomendada: >= 1.0.0);
+Terraform instalado;
 
 AWS CLI instalado;
 
 Permissões adequadas na AWS (via CLI, perfil ou credenciais configuradas);
 
-Backend configurado (caso esteja usando remote state) - bucket S3 referenciado em backend.tf;
+Backend configurado (caso esteja usando remote state) - um bucket S3 existente referenciado em backend.tf;
 
 Variáveis definidas corretamente no arquivo terraform.tfvars
 
